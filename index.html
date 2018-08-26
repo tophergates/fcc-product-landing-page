@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>freeCodeCamp Build a Product Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+  <div class="pageWrapper">
+    <header class="header" id="header">
+      <div class="header__inner">
+        <div class="brand">
+          <a class="brand__link" href="./" title="Covfefe 'n Code">
+            <img src="./images/covfefe-n-code.png" alt="" class="brand__logo" id="header-img">
+            <h1 class="brand__name">Covfefe 'n Code</h1>
+          </a>
+        </div>
+        <a id="hamburger" href="#nav-bar" class="menu-toggle-button">
+          <svg class="menu-toggle-svg" viewbox="0 0 48 48">
+            <title>Menu</title>
+            <rect x="15.5" y="16.5" width="20" height="3" />
+            <rect x="15.5" y="23.5" width="20" height="3" />
+            <rect x="15.5" y="30.5" width="20" height="3" />
+          </svg>
+        </a>
+        <nav class="nav" id="nav-bar">
+          <h2 class="nav__title">Primary Navigation:</h2>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#hero" title="Get Started" class="nav-link">Get Started</a></li>
+            <li class="nav-item"><a href="#features" title="Realize the true benefits of Covfefe 'n Code" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#pricing" title="See our reasonable and fair prices" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__section" id="hero">
+        <div class="hero__wrapper">
+          <div class="section__inner hero">
+            <h2 class="hero__title">Get Matched with a Mentor</h2>
+            <form class="hero__form" id="form" action="#">
+              <input type="email" class="form__input" id="email" name="email" placeholder="Enter your email address" required>
+              <input type="submit" class="form__submit" id="submit" value="Get Started">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="main__section" id="features">
+        <div class="section__inner">
+          <ul class="features__list">
+            <li class="feature">
+              <header class="feature__header">
+                <i class="icon icon--programming"></i>
+                <h2 class="feature__title">Code Together</h2>
+              </header>
+              <p class="feature__description">Enjoy the benefit of pair programming. Coding with others is a great way of
+                building social skills, learning new programming methods and styles, and will continue to keep you motivated.</p>
+            </li>
+            <li class="feature">
+              <header class="feature__header">
+                <i class="icon icon--mentor"></i>
+                <h2 class="feature__title">Personal Mentor</h2>
+              </header>
+              <p class="feature__description">Get paired with a skilled and experienced mentor. Whether you're looking for
+                project help, general programming knowledge, or would just like to chat about best practices; your personal
+                mentor can help.</p>
+            </li>
+            <li class="feature">
+              <header class="feature__header">
+                <i class="icon icon--friendship"></i>
+                <h2 class="feature__title">Friendship</h2>
+              </header>
+              <p class="feature__description">Networking with developers is important, but building long-lasting friendships
+                with like-minded developers is vital to your mental health and continued success as a developer.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__section">
+        <div class="section__inner video__container">
+          <div class="responsive-video">
+            <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/kqQ8tlHD_4w?controls=0&showinfo=0&rel=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="main__section" id="pricing">
+        <div class="section__inner prices">
+          <h2 class="section__heading">Pricing</h2>
+          <ol class="price__list">
+            <li class="price price--free">
+              <header class="price__heading">
+                <h3 class="price__title">14 Day Trial</h3>
+                <span class="price__amount">Free<small><sup>*</sup></small></span>
+              </header>
+              <div class="price__body">
+                <ul class="price__benefits">
+                  <li class="benefit">Standard Mentorship pairing</li>
+                  <li class="benefit">(2) Covfefe 'n Code<sup>™</sup> mentor sessions<small><sup>**</sup></small></li>
+                </ul>
+              </div>
+            </li>
+            <li class="price price--premium">
+              <header class="price__heading">
+                <h3 class="price__title">Premium</h3>
+                <span class="price__amount">$54/yr</span>
+              </header>
+              <div class="price__body">
+                <ul class="price__benefits">
+                  <li class="benefit">Premium Mentorship pairing</li>
+                  <li class="benefit">(4) Covfefe 'n Code<sup>™</sup> mentor sessions per month<small><sup>**</sup></small></li>
+                </ul>
+              </div>
+            </li>
+            <li class="price price--pro">
+              <header class="price__heading">
+                <h3 class="price__title">Professional</h3>
+                <span class="price__amount">$94/yr</span>
+              </header>
+              <div class="price__body">
+                <ul class="price__benefits">
+                  <li class="benefit">Premium Mentorship pairing with (2) mentors</li>
+                  <li class="benefit">(4) Covfefe 'n Code<sup>™</sup> mentor sessions per month, per mentor<small><sup>**</sup></small></li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+          <p class="legal__text"><small><sup>*</sup></small> No obligation to continue after the trial ends<br><small><sup>**</sup></small>
+            A single coding session will last a maximum of two hours</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__text">Made with <span class="footer__heart">&hearts;</span> by <a href="https://github.com/tophergates"
+            target="_blank">tophergates</a></p>
+        <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+            title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+            target="_blank">CC 3.0 BY</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
